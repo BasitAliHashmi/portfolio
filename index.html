@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of a Creative Software Developer">
+    <title>Basit Ali Hashmi - Mobile App Developer</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="#" class="logo">Basit Ali Hashmi</a>
+                <div class="nav-links">
+                    <a href="#home" class="active">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contacts</a>
+                </div>
+                <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero section-padding">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <span class="hero-subtitle">Hello.</span>
+                    <h1 class="hero-subtitle" style="font-size: 2rem; margin-top: 10px;">I'm Basit</h1>
+                    <span class="hero-role">Mobile App Developer</span>
+
+                    <div style="margin-top: 40px;">
+                        <a href="#contact" class="btn">Got a project?</a>
+                        <a href="#" class="btn btn-outline">My resume</a>
+                    </div>
+                </div>
+                <div class="hero-img">
+                    <img src="assets/images/hero.jpg" alt="Profile Picture">
+                </div>
+            </div>
+
+            <!-- Tech Stack Strip -->
+            <div class="tech-stack-strip">
+                <span>HTML5</span>
+                <span>CSS</span>
+                <span>Javascript</span>
+                <span>Node.js</span>
+                <span>React</span>
+                <span>Git</span>
+                <span>Github</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section-padding">
+        <div class="container">
+            <div class="about-section">
+                <!-- Services/Skills List -->
+                <div class="services-list">
+                    <div class="service-item">
+                        <i class="fas fa-desktop"
+                            style="color: var(--text-muted); font-size: 1.5rem; margin-bottom: 15px;"></i>
+                        <h4>Website Development</h4>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-mobile-alt"
+                            style="color: var(--text-muted); font-size: 1.5rem; margin-bottom: 15px;"></i>
+                        <h4>App Development</h4>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-server"
+                            style="color: var(--text-muted); font-size: 1.5rem; margin-bottom: 15px;"></i>
+                        <h4>Website Hosting</h4>
+                    </div>
+                </div>
+
+                <!-- Bio & Stats -->
+                <div class="about-bio">
+                    <h2>About <span class="text-accent">me</span></h2>
+                    <p class="text-muted" style="margin-bottom: 40px;">
+                        I started my software journey from photography. Throughout that, I learned to live the process
+                        of creating from scratch. Since then, this has led me to software development as it fulfills my
+                        love for learning and building things.
+                    </p>
+
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <h2 class="text-accent"><span class="counter" data-target="120">0</span>+</h2>
+                            <p>Completed Projects</p>
+                        </div>
+                        <div class="stat-item">
+                            <h2 class="text-accent"><span class="counter" data-target="95">0</span>%</h2>
+                            <p>Client Satisfaction</p>
+                        </div>
+                        <div class="stat-item">
+                            <h2 class="text-accent"><span class="counter" data-target="10">0</span>+</h2>
+                            <p>Years of Experience</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section-padding">
+        <div class="container">
+            <h2>Projects</h2>
+
+            <div class="projects-container">
+                <!-- Project 1 -->
+                <div class="project-item">
+                    <div class="project-text">
+                        <h3>Battleship</h3>
+                        <div class="project-tags">
+                            <span class="project-tag">HTML</span>
+                            <span class="project-tag">CSS</span>
+                            <span class="project-tag">Javascript</span>
+                        </div>
+                        <p class="text-muted" style="margin-bottom: 30px;">
+                            Used components of Javascript to implement basic data structures through the game of
+                            Battleship. Used a terminal to display ships and tracked where ships are hit or missed.
+                        </p>
+                        <a href="#" class="btn">View Github</a>
+                        <a href="#" class="btn btn-outline" style="border:none; color: white;">View project <i
+                                class="fas fa-arrow-right" style="font-size: 0.8rem;"></i></a>
+                    </div>
+                    <div class="project-code-snippet">
+                        <pre>
+class Ship {
+  constructor(length) {
+    this.length = length;
+    this.hits = 0;
+    this.sunk = false;
+  }
+  
+  hit() {
+    this.hits++;
+    if (this.hits >= this.length) {
+      this.sunk = true;
+    }
+  }
+}</pre>
+                    </div>
+                </div>
+
+                <!-- Project 2 (Reverse) -->
+                <div class="project-item reverse">
+                    <div class="project-text">
+                        <h3>Movie Titles API</h3>
+                        <div class="project-tags">
+                            <span class="project-tag">React</span>
+                            <span class="project-tag">API</span>
+                            <span class="project-tag">CSS</span>
+                        </div>
+                        <p class="text-muted" style="margin-bottom: 30px;">
+                            Used a public movie API to build a collection movie list that sorts from A to Z or vice
+                            versa. It also counts how many movies in each container.
+                        </p>
+                        <a href="#" class="btn">View Github</a>
+                        <a href="#" class="btn btn-outline" style="border:none; color: white;">View project <i
+                                class="fas fa-arrow-right" style="font-size: 0.8rem;"></i></a>
+                    </div>
+                    <div class="project-image-container">
+                        <img src="assets/images/portfolio1.png" alt="Movie App">
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-item">
+                    <div class="project-text">
+                        <h3>Javascript Calculator</h3>
+                        <div class="project-tags">
+                            <span class="project-tag">HTML</span>
+                            <span class="project-tag">CSS</span>
+                            <span class="project-tag">JS</span>
+                        </div>
+                        <p class="text-muted" style="margin-bottom: 30px;">
+                            Uses simple algorithm concepts in Javascript to produce an arithmetic result in a terminal.
+                        </p>
+                        <a href="#" class="btn">View Github</a>
+                        <a href="#" class="btn btn-outline" style="border:none; color: white;">View project <i
+                                class="fas fa-arrow-right" style="font-size: 0.8rem;"></i></a>
+                    </div>
+                    <div class="project-code-snippet">
+                        <pre>
+function calculate(n1, operator, n2) {
+  let result = '';
+  
+  if (operator === 'add') {
+    result = parseFloat(n1) + parseFloat(n2);
+  } else if (operator === 'subtract') {
+    result = parseFloat(n1) - parseFloat(n2);
+  }
+  
+  return result;
+}</pre>
+                    </div>
+                </div>
+                <!-- Project 4 (Reverse) -->
+                <div class="project-item reverse">
+                    <div class="project-text">
+                        <h3>SaaS Landing Page</h3>
+                        <div class="project-tags">
+                            <span class="project-tag">HTML</span>
+                            <span class="project-tag">CSS</span>
+                        </div>
+                        <p class="text-muted" style="margin-bottom: 30px;">
+                            Used HTML concepts such as creating a form and a basic session. It also used components of
+                            both the grid and flexbox elements.
+                        </p>
+                        <a href="#" class="btn">View Github</a>
+                        <a href="#" class="btn btn-outline" style="border:none; color: white;">View project <i
+                                class="fas fa-arrow-right" style="font-size: 0.8rem;"></i></a>
+                    </div>
+                    <div class="project-image-container">
+                        <img src="assets/images/portfolio2.png" alt="SaaS App">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-padding">
+        <div class="container">
+            <h5 class="text-accent" style="margin-bottom: 10px;">Contacts</h5>
+            <div class="contact-container">
+                <div class="contact-text">
+                    <h1>Have a project?<br>Let's talk!</h1>
+                </div>
+
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" placeholder="Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <textarea rows="4" placeholder="Message"></textarea>
+                        </div>
+                        <button type="submit" class="btn" style="border: none;">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <h3>Basit Ali Hashmi</h3>
+            <p>Designed with love, all rights reserved for Basit Ali Hashmi</p>
+            <div class="social-icons">
+                <i class="fas fa-envelope"></i>
+                <i class="fab fa-github"></i>
+                <i class="fab fa-linkedin"></i>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+<script>
+    const burger = document.querySelector('.burger');
+    const nav = document.querySelector('.nav-links');
+    const navLinks = document.querySelectorAll('.nav-links a');
+
+    burger.addEventListener('click', () => {
+        // Toggle Nav
+        nav.classList.toggle('nav-active');
+
+        // Burger Animation
+        burger.classList.toggle('toggle');
+    });
+
+    // Close menu when link is clicked and highlight active
+    navLinks.forEach(link => {
+        link.addEventListener('click', function () {
+            // Close mobile menu
+            nav.classList.remove('nav-active');
+            burger.classList.remove('toggle');
+
+            // Remove active class from all links
+            navLinks.forEach(link => link.classList.remove('active'));
+            // Add active class to clicked link
+            this.classList.add('active');
+        });
+    });
+
+    // Number Animation Logic
+    const counters = document.querySelectorAll('.counter');
+    const speed = 200; // The lower the slower
+
+    const animateCounters = () => {
+        counters.forEach(counter => {
+            const updateCount = () => {
+                const target = +counter.getAttribute('data-target');
+                const count = +counter.innerText;
+
+                // Lower inc to slow and higher to slow
+                const inc = target / speed;
+
+                if (count < target) {
+                    // Add inc to count and output in counter
+                    counter.innerText = Math.ceil(count + inc);
+                    // Call function every ms
+                    setTimeout(updateCount, 20);
+                } else {
+                    counter.innerText = target;
+                }
+            };
+            updateCount();
+        });
+    };
+
+    // Intersection Observer to start animation when visible
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                animateCounters();
+                observer.unobserve(entry.target); // Run only once
+            }
+        });
+    }, { threshold: 0.5 });
+
+    // Observe the stats section
+    const statsSection = document.querySelector('.about-stats');
+    if (statsSection) {
+        observer.observe(statsSection);
+    }
+
+    // Scroll Spy active state
+    const sections = document.querySelectorAll("section");
+
+    window.addEventListener("scroll", () => {
+        let current = "";
+        const scrollY = window.scrollY;
+
+        sections.forEach((section) => {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.clientHeight;
+            // -100 offset for header height/visual preference
+            if (scrollY >= (sectionTop - 150)) {
+                current = section.getAttribute("id");
+            }
+        });
+
+        navLinks.forEach((li) => {
+            li.classList.remove("active");
+            if (li.getAttribute("href").includes(current)) {
+                li.classList.add("active");
+            }
+        });
+    });
+</script>
+</body>
+
+</html>
+```
